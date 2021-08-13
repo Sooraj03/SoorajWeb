@@ -1,0 +1,258 @@
+
+.Nav {
+    width: 100%;
+    height:60px;
+    background-color: transparent;
+    position: fixed;
+    top: 0%;
+    z-index: 2;
+
+}
+
+.active {
+    width: 100%;
+    height: 90px;
+    padding: 5px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    z-index: 4;
+    
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+.bg-myRed {
+    background-color: crimson;
+}
+
+
+
+.coloring {
+    color: rgb(24, 7, 7);
+}
+
+.logo{
+    margin: 10px;
+}
+
+.line {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: rgb(228, 110, 110);
+    position: absolute;
+    left: 26%;
+    top:80%;
+    transition: all 1s ease-in-out;
+
+}
+
+.main{
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.aemo{
+    margin-left: 60px;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+  
+
+    .aemo:nth-child(2):hover~.line {
+        transform: translate(130px);
+        border-radius: 2px 2px;
+        width: 20px;
+        height: 3px;
+        background-color: rgb(241, 153, 153);
+        transition: all 2s ease-in-out;
+    }
+
+    .aemo:nth-child(3):hover~.line {
+        transform: translate(255px);
+        border-radius: 2px 2px 2px 2px;
+        width: 20px;
+        height: 3px;
+        background-color: rgb(240, 141, 141);
+        transition: all 1s ease-in-out;
+    }
+
+    .aemo:nth-child(4):hover~.line {
+        transform: translate(375px);
+        border-radius: 2px 2px 2px 2px;
+        width: 20px;
+        height: 3px;
+        background-color: rgb(240, 141, 141);
+        transition: all 1s ease-in-out;
+    }
+
+    .aemo:nth-child(5):hover~.line {
+        transform: translate(535px);
+        border-radius: 2px 2px 2px 2px;
+        width: 20px;
+        height: 3px;
+        background-color: rgb(240, 141, 141);
+        transition: all 1s ease-in-out;
+    }
+
+
+    .button{
+        position: relative;
+        left:8%;
+    }
+    .button1{
+        float: right;
+        display: flex;
+        flex-direction: row;
+        margin: 8px 8px 8px 8px;
+        border: 2px solid rgb(56, 56, 55);
+        background-color: black;
+        font-weight: 800;
+    }
+
+    .button1:hover{
+        animation: diffe 1s;
+        animation-iteration-count: infinite;
+        
+
+    }
+    
+    .button2 {
+        float: right;
+        display: flex;
+        flex-direction: row;
+        margin: 8px 8px 8px 8px;
+        border: 2px solid rgb(51, 51, 50);
+        background-color: black;
+        font-weight: 800;
+        
+    }
+    
+    .button2:hover {
+        animation: diffe 1s;
+        animation-iteration-count: infinite;
+    }
+
+    
+    @keyframes diffe {
+        0% {
+            background: linear-gradient(10deg, rgb(130, 224, 6), rgb(194, 228, 3));
+            border: 2px solid rgb(42, 217, 248);
+        }
+
+        25% {
+            background: linear-gradient(50deg, rgb(15, 231, 231), rgb(13, 240, 89));
+            border: 2px solid rgb(197, 28, 28);
+        }
+
+        75% {
+            background: linear-gradient(100deg, rgb(184, 11, 252), rgb(55, 6, 233));
+            border: 2px solid wheat;
+        }
+
+        100% {
+            background: linear-gradient(80deg, rgb(223, 8, 187), rgb(226, 6, 61));
+            border: 2px solid lightpink;
+        }
+    }
+
+@media (orientation: portrait), (max-width:800px) {
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+
+   .line{
+       display: none;
+   }
+
+    .main {
+        font-size: 15px;
+        font-weight: 800;
+        margin-left: 65px;
+    }
+
+    .aemo {
+       
+        font-size: 15px;
+        font-weight: 800;
+    }
+
+    .Nav {
+        
+        display: none;
+        position: absolute;
+        top: 0%;
+        z-index: 2;
+        
+
+    }
+
+    .active {
+        margin-left: -8%;
+        width: 105%;
+        height: 300px;
+        
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+       
+        
+        display: block;
+        background-color:rgb(31, 30, 30);
+        overflow: scroll;
+        z-index: 10;
+
+    }
+
+    .item{
+        display: none;
+    }
+
+    .aemo{
+        width: 35%;
+        line-height: 30px;
+    }
+
+    .main{
+         width: 35%;
+         line-height: 30px;
+    }
+
+    .aemo:hover{
+        background-color: rgb(33, 92, 92);
+        transition: 0.5s ease-in-out;
+    }
+
+    .main:hover {
+        background-color: rgb(35, 134, 134);
+        transition: 0.5s ease-in-out;
+    }
+
+    .coloring{
+        margin-right: 10px;
+        position: absolute;
+        top:20%;
+        left: 80%;
+        float: right;
+    }
+
+    .logo{
+      position: absolute;
+      top:-70%;
+      left: -1%;
+      float: left;
+    }
+
+    .button1{
+        display: none;
+    }
+    .button2{
+       display: none;
+    }
+}
